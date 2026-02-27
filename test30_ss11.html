@@ -33,6 +33,15 @@
             return filterScore
         }
         review(students)
+
+        function normalizeDisplay(studentArray) {
+            let studentLabels = studentArray.map(student => {
+                return `Tên: ${student.name} - Điểm: ${student.score}`;
+            });
+            console.log(studentLabels);
+            return studentLabels;
+        }
+        normalizeDisplay(students)
     </script>
 </body>
 </html>
